@@ -19,8 +19,7 @@ phy_speed_x = clamp(phy_speed_x, -max_x_speed, max_x_speed);
 
 //hold the shield
 my_shield.snap_to_me(phy_position_x, phy_position_y);
+my_spear.snap_to_me(phy_position_x, phy_position_y);
 
 var _on_ground = place_meeting(phy_position_x, phy_position_y+1, obj_floor);
-show_debug_message(_on_ground);
-
 
