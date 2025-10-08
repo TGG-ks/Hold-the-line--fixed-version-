@@ -28,6 +28,7 @@
     {"name":"obj_shield_shove","order":2,"path":"objects/obj_shield_shove/obj_shield_shove.yy",},
     {"name":"obj_shield","order":1,"path":"objects/obj_shield/obj_shield.yy",},
     {"name":"obj_spear","order":3,"path":"objects/obj_spear/obj_spear.yy",},
+    {"name":"obj_wave_controller","order":13,"path":"objects/obj_wave_controller/obj_wave_controller.yy",},
     {"name":"rm_level","order":1,"path":"rooms/rm_level/rm_level.yy",},
     {"name":"spr_enemy","order":3,"path":"sprites/spr_enemy/spr_enemy.yy",},
     {"name":"spr_head","order":5,"path":"sprites/spr_head/spr_head.yy",},
