@@ -35,8 +35,8 @@ snap_to_me = function(_x, _y){
 	
 	//point from the player's position to the mouse
 	var _dir = point_direction(_x,_y,mouse_x,mouse_y);
-	var _hover_dist_x = 85 + thrust_additive;
-	var _hover_dist_y = 65 + thrust_additive;
+	var _hover_dist_x = 55 + thrust_additive;
+	var _hover_dist_y = 35 + thrust_additive;
 	
 	//how far away you should hover
 	var _x_additive = lengthdir_x(_hover_dist_x,_dir);
