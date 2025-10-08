@@ -15,6 +15,7 @@ snap_to_me = function(_x, _y){
 			
 			with(_i){
 				state = states.STUNNED;
+				stunned_recovery = 0;
 				var _push_dir_h = sign(x - _x) * 5000;
 				var _push_dir_v = sign(mouse_y - y) * 12; //should "hit" the enemy either in the top or bottom half
 				physics_apply_force(x, y+_push_dir_v, _push_dir_h, 0);
