@@ -53,7 +53,7 @@
     {"id":{"name":"room_persistent_objects","path":"rooms/room_persistent_objects/room_persistent_objects.yy",},},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},},
     {"id":{"name":"spr_head","path":"sprites/spr_head/spr_head.yy",},},
-    {"id":{"name":"spr_rectangle","path":"sprites/spr_rectangle/spr_rectangle.yy",},},
+    {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_shield","path":"sprites/spr_shield/spr_shield.yy",},},
     {"id":{"name":"spr_solid_object","path":"sprites/spr_solid_object/spr_solid_object.yy",},},
     {"id":{"name":"spr_spear","path":"sprites/spr_spear/spr_spear.yy",},},

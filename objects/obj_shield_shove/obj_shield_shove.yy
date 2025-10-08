@@ -20,7 +20,7 @@
   "physicsGroup":1,
   "physicsKinematic":false,
   "physicsLinearDamping":0.1,
-  "physicsObject":true,
+  "physicsObject":false,
   "physicsRestitution":0.1,
   "physicsSensor":false,
   "physicsShape":1,
@@ -40,5 +40,5 @@
     "path":"sprites/spr_shield/spr_shield.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
