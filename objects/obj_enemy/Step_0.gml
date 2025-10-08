@@ -31,6 +31,13 @@ switch(state){
 	case states.STUNNED:
 		#region
 		phy_fixed_rotation = false;
+		
+		//try to stand back up
+		var _targetDir = 0;
+		var _angleDiff = angle_difference(_targetDir, dir);
+		
+		phy_angular_velocity = sign(_angleDiff) * 20;
+		
 		#endregion
 	break;
 	
