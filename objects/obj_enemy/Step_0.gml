@@ -37,6 +37,13 @@ switch(state){
 	case states.DEAD:
 		#region
 		phy_fixed_rotation = false;
+        
+        var _s = id;
+        with(obj_wave_controller)
+        {
+            current_wave_enemies[array_get_index(current_wave_enemies,_s)] = -1;
+        }
+        
 		instance_destroy();
 		#endregion
 	break;
