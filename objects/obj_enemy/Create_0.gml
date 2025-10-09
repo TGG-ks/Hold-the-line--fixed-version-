@@ -8,6 +8,7 @@ spd = 5;
 
 stunned_recovery = 0;
 
+state = states.IDLE;
 
 #region make my fixture
 fix = physics_fixture_create();

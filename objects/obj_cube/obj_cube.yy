@@ -8,8 +8,8 @@
   "name":"obj_cube",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"physics objects",
+    "path":"folders/Objects/physics objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

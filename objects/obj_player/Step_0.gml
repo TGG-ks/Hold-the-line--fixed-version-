@@ -4,13 +4,20 @@
 //movement stuff
 var _left = keyboard_check(vk_left)||keyboard_check(ord("A"));
 var _right = keyboard_check(vk_right)||keyboard_check(ord("D"));
+var _jump = keyboard_check_pressed(vk_space)||keyboard_check_pressed(ord("W"));
 var _move_h = _right - _left;
 _move_h *= spd;
+var _move_v = 0;
 
-if(_move_h != 0){
-	//move about
-	physics_apply_force(x, y, _move_h*1000, 0);
+var _on_ground = place_meeting(phy_position_x, phy_position_y+1, obj_floor);
+
+//jump
+if(_jump && _on_ground){
+	_move_v = -65000;
+	
 }
+
+physics_apply_force(x, y, _move_h*1000, _move_v);
 
 var max_x_speed = 10;
 
@@ -21,5 +28,5 @@ phy_speed_x = clamp(phy_speed_x, -max_x_speed, max_x_speed);
 my_shield.snap_to_me(phy_position_x, phy_position_y);
 my_spear.snap_to_me(phy_position_x, phy_position_y);
 
-var _on_ground = place_meeting(phy_position_x, phy_position_y+1, obj_floor);
+
 
