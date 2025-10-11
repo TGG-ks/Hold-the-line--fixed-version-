@@ -5,6 +5,7 @@ enum states {
 	IDLE,
 	RUNNING,
 	STUNNED,
+	DEBUG,
 	DEAD
 }
 

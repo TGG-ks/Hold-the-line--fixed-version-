@@ -1,5 +1,49 @@
 
-draw_self();
+draw_sprite_ext(
+sprite_index,
+image_index,
+x,
+y,
+dir,
+image_yscale,
+image_angle,
+image_blend,
+image_alpha
+);
+
+//normal draw stuff
+switch(state){
+		
+	case states.IDLE:
+		#region
+		
+		#endregion
+	break;
+	
+	case states.RUNNING:
+		#region
+		
+		#endregion
+	break;
+	
+	case states.STUNNED:
+		#region
+		var _x_additive = -lengthdir_y(sprite_width,-image_angle);
+		var _y_additive = -lengthdir_x(sprite_height-30,-image_angle);
+		draw_sprite(spr_stunned_animation,current_time/100,x+_x_additive,y+_y_additive);
+		#endregion
+	break;
+	
+	case states.DEAD:
+		#region
+		
+		#endregion
+	break;
+}
+
+
+
+if(debug){
 
 var _string = "";
 
@@ -31,5 +75,8 @@ switch(state){
 }
 
 
-draw_text(x,y,_string);
+draw_text(x,y,_string + " " + string(phy_rotation));
 
+physics_draw_debug();
+
+}

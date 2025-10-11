@@ -1,0 +1,2 @@
+state = states.DEAD;
+

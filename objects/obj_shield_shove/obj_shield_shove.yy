@@ -40,5 +40,5 @@
     "path":"sprites/spr_shield/spr_shield.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

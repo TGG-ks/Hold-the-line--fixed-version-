@@ -19,18 +19,17 @@ switch(state){
 		var _move_h = sign(obj_player.phy_position_x-phy_position_x);
 		_move_h *= spd;
 		
+		if(_move_h != 0){
+			dir = sign(_move_h);
+		}
+		
 		if(_move_h != 0 && _on_ground){
 			//move about
 			physics_apply_force(x, y, _move_h*1000, 0);
 		}
 		
-		var max_x_speed = 10;
-		
 		//reset stunned state
 		stunned_recovery = 0;
-		
-		//dont allow speed to become too great
-		phy_speed_x = clamp(phy_speed_x, -max_x_speed, max_x_speed);
 		#endregion
 	break;
 	
@@ -51,6 +50,14 @@ switch(state){
 			phy_angular_velocity = sign(_angleDiff) * stunned_recovery;
 		}
 		
+		//leave the state
+		if(abs(angle_difference(0, phy_rotation)) < 5){
+			if(stunned_recovery == 20){
+				state = states.IDLE;
+				phy_rotation = 0;
+			}
+		}
+		
 		#endregion
 	break;
 	
@@ -67,6 +74,26 @@ switch(state){
 		instance_destroy();
 		#endregion
 	break;
+	
+	case states.DEBUG:
+		#region
+		phy_speed_x = 0;
+		phy_speed_y = 0;
+		debug = true;
+		phy_fixed_rotation = true;
+		#endregion
+	break;
 }
 
+var max_x_speed = 5;
 
+//dont allow speed to become too great
+phy_speed_x = clamp(phy_speed_x, -max_x_speed, max_x_speed);
+
+if(instance_exists(my_shield)){
+	my_shield.snap_to_me(phy_position_x, phy_position_y, dir);
+}
+if(instance_exists(my_axe)){
+	my_axe.snap_to_me(phy_position_x, phy_position_y, dir);
+	my_axe.depth = depth-1;
+}

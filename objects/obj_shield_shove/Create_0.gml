@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-alarm[0] = 10;
+alarm[0] = 20;
 
 #region make my fixture
 fix = physics_fixture_create();
@@ -16,7 +16,7 @@ physics_fixture_add_point(fix, _half_spr_width, _half_spr_height);
 physics_fixture_add_point(fix, -_half_spr_width, _half_spr_height);
 
 physics_fixture_set_collision_group(fix, 1);
-physics_fixture_set_density(fix, 4);
+physics_fixture_set_density(fix, 5);
 physics_fixture_bind(fix, id);
 #endregion
 

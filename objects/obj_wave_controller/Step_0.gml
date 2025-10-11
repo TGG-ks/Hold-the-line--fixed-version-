@@ -7,7 +7,7 @@ if (timer > 0)
         
         wave++;
         for (var i = 0; i < wave_enemynum[wave]; i++) {
-        	var _enemy = instance_create_layer(random(room_width),0,layer,obj_enemy);
+        	var _enemy = instance_create_layer(random(room_width),0,"enemies",obj_enemy);
             array_push(current_wave_enemies,_enemy.id);
         }
     }

@@ -19,7 +19,7 @@
   "height":92,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"b8ebd231-97fd-4474-ab8b-13a8b32b15ec","blendMode":0,"displayName":"default","isLocked":false,"name":"b8ebd231-97fd-4474-ab8b-13a8b32b15ec","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"e3c671a6-ce81-4653-a77d-75c4d376401c","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"e3c671a6-ce81-4653-a77d-75c4d376401c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_boulder",
   "nineSlice":null,
