@@ -1,2 +1,1 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
+if (!audio_is_playing(snd_music)) audio_play_sound(snd_music,0,0);
